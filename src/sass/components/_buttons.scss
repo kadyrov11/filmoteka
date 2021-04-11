@@ -1,0 +1,46 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+}
+
+.button {
+  width: 129px;
+  height: 44px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+  text-transform: uppercase;
+
+  color: $secondary-color;
+  padding-left: 21px;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid $secondary-color;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0;
+  transition: background-color 250ms linear;
+}
+
+.button:not(:last-child) {
+  margin-right: 20px;
+}
+
+.btn-watched-outline:hover {
+  background-color: $accent-color;
+  border-color: $accent-color;
+}
+
+.btn-queue-outline:hover {
+  background-color: $accent-color;
+  border-color: $accent-color;
+}
+
+@media screen and (min-width: 768) and (min-width: 1200px) {
+  .button {
+    width: 136px;
+  }
+}
